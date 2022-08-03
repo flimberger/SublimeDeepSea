@@ -1,0 +1,99 @@
+{
+	"variables": {
+		"cyan": "#33CCCC",
+		"darkblue": "#002233",
+		"darkerblue": "#011220",
+		"green": "#3CB371",
+		"lightblue": "#6699BB",
+		"lightgray": "#AAAAAA",
+		"mediumblue": "#123456",
+		"mediumgray": "#888888",
+		"orange": "#FF9900",
+		"red": "#FF0000",
+		"yellow": "#FFCC00",
+	},
+	"globals": {
+		"foreground": "var(lightgray)",
+		"background": "var(darkblue)",
+		"accent": "var(yellow)",
+		"selection": "#214283",
+		"caret": "var(yellow)",
+		"line_highlight": "var(mediumblue)",
+		"brackets_options": "bold",
+		"misspelling": "var(orange)",
+		"gutter": "var(darkerblue)",
+		"gutter_foreground": "var(yellow)",
+		"gutter_foreground_highlight": "var(red)",
+	},
+	"rules": [
+		{
+			"scope": "string",
+			"foreground": "var(lightblue)",
+		},
+		{
+			"scope": "variable",
+			"foreground": "",
+		},
+		{
+			"scope": "constant.language, keyword, keyword.operator.word, storage",
+			"font_style": "bold",
+			"foreground": "var(cyan)",
+		},
+		{
+			"scope": "keyword.operator",
+			"foreground": "var(lightgray)",
+		},
+		{
+			"scope": "constant",
+			"foreground": "var(yellow)",
+		},
+		{
+			"scope": "constant.other.placeholder, constant.character.escape",
+			"foreground": "var(yellow)",
+		},
+		{
+			"scope": "comment",
+			"foreground": "var(mediumgray)",
+		},
+		{
+			"scope": "markup.heading",
+			"foreground": "var(yellow)",
+		},
+		{
+			"scope": "markup.bold, markup.italic, markup.underline, markup.raw, markup.quote",
+			"foreground": "var(lightblue)",
+		},
+		{
+			"scope": "markup.list.unnumbered.bullet, markup.list.numbered.bullet",
+			"foreground": "var(cyan)",
+		},
+		{
+			"scope": "punctuation.definition.heading.begin",
+			"foreground": "var(cyan)",
+		},
+		{
+			"scope": "meta.link.inline.markdown, meta.link.inline.description.markdown",
+			"foreground": "var(cyan)",
+		},
+		{
+			"scope": "markup.deleted",
+			"foreground": "var(orange)",
+		},
+		{
+			"scope": "markup.inserted",
+			"foreground": "var(green)",
+		},
+		{
+			"scope": "punctuation.definition.tag.begin.xml, punctuation.definition.tag.end.xml",
+			"foreground": "var(green)",
+		},
+		{
+			"scope": "meta.tag.xml, meta.tag.preprocessor.xml",
+			"foreground": "var(cyan)",
+		},
+		{
+			"scope": "entity.other.attribute-name.localname.xml, punctuation.separator.key-value.xml",
+			"foreground": "var(lightgray)",
+		},
+	]
+}
